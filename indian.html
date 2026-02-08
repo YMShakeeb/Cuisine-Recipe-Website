@@ -1,28 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Indian Cuisine</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+            background-color: #ffffff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header h2 {
+            margin-top: 10px;
+            font-weight: normal;
+            color: #555;
+        }
+
+        nav {
+            margin: 25px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #c0392b;
+        }
+
+        .content {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .content h2 {
+            margin-bottom: 15px;
+        }
+
+        .content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content ul li {
+            margin: 10px 0;
+        }
+
+        .content ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .content ul li a:hover {
+            color: #c0392b;
+        }
+
+        /* Image container */
+        .image-container {
+            padding: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image-container img {
+            width: 400px;
+            /* Same size as your previous image */
+            max-width: 90%;
+            height: 500px;
+            /* Maintain aspect ratio */
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: block;
+        }
+
+        footer {
+            margin: 30px 0;
+        }
+
+        footer a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #c0392b;
+        }
+    </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Indian Cuisine</h1>
-    <h2>Butter Chicken Recipe</h2>
-</header>
+    <header>
+        <h1>Indian Cuisine</h1>
+        <h2>Traditional & Popular Dishes</h2>
+    </header>
 
-<ul>
-    <li><a href="../recipes/indian/butter-chicken.html">Butter Chicken</a></li>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
 
-</ul>
+        </ul>
+    </nav>
 
-<footer>
-    <a href="../index.html">← Back to Home</a>
-</footer>
-<img
-    src="https://images.unsplash.com/photo-1728910107534-e04e261768ae?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    alt="Unsplash food image"
-    width="1450"
-    height="700">
+    <div class="content">
+        <h2>Recipes</h2>
+        <ul>
+            <li><a href="../recipes/butter-chicken.html">Butter Chicken</a></li>
+        </ul>
+    </div>
+
+    <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1728910107534-e04e261768ae?q=80&w=1480&auto=format&fit=crop"
+            alt="Indian cuisine">
+    </div>
+
+    <footer>
+        <a href="../index.html">← Back to Home</a>
+    </footer>
+
 </body>
+
 </html>
